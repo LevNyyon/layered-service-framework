@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#E7E5E4" stroke-width="1" opacity="0.5"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#0A0A0A"/>
+    </marker>
+    <style>
+      .kick { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; letter-spacing: 2.5px; fill: #78716C; }
+      .role { font-size: 17px; fill: #0A0A0A; }
+      .sub  { font-size: 13px; fill: #78716C; }
+      .idx  { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 30px; font-weight: 700; fill: #D6D3D1; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="700" fill="#FAFAF9"/>
+  <rect width="1200" height="700" fill="url(#grid)"/>
+
+  <text x="70" y="58" font-size="30" font-weight="700" fill="#0A0A0A" letter-spacing="-0.5">Layered service framework</text>
+  <text x="70" y="85" class="sub" font-size="14.5">gateway &#8594; tool &#8594; workflow &#8594; module &#8594; knowledge &#160;&#183;&#160; each layer reaches only the one below</text>
+
+  <!-- main stack -->
+  <g>
+    <!-- 01 MODULE -->
+    <rect x="70" y="112" width="540" height="78" rx="12" fill="#FFFFFF" stroke="#E7E5E4" stroke-width="1.5"/>
+    <text x="586" y="162" text-anchor="end" class="idx">01</text>
+    <text x="98" y="146" class="kick">MODULE</text>
+    <text x="98" y="170" class="role">a product area and its screen</text>
+    <line x1="340" y1="190" x2="340" y2="208" stroke="#0A0A0A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <!-- 02 WORKFLOW -->
+    <rect x="70" y="210" width="540" height="78" rx="12" fill="#FFFFFF" stroke="#E7E5E4" stroke-width="1.5"/>
+    <text x="586" y="260" text-anchor="end" class="idx">02</text>
+    <text x="98" y="244" class="kick">WORKFLOW</text>
+    <text x="98" y="268" class="role">orders existing tools, no logic</text>
+    <line x1="340" y1="288" x2="340" y2="306" stroke="#0A0A0A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <!-- 03 TOOL -->
+    <rect x="70" y="308" width="540" height="78" rx="12" fill="#FFFFFF" stroke="#E7E5E4" stroke-width="1.5"/>
+    <text x="586" y="358" text-anchor="end" class="idx">03</text>
+    <text x="98" y="342" class="kick">TOOL</text>
+    <text x="98" y="366" class="role">one job, in the shared pool</text>
+    <line x1="340" y1="386" x2="340" y2="404" stroke="#0A0A0A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <!-- 04 GATEWAY -->
+    <rect x="70" y="406" width="540" height="78" rx="12" fill="#FFFFFF" stroke="#E7E5E4" stroke-width="1.5"/>
+    <text x="586" y="456" text-anchor="end" class="idx">04</text>
+    <text x="98" y="440" class="kick">GATEWAY</text>
+    <text x="98" y="464" class="role">one external service, no reasoning</text>
+    <line x1="340" y1="484" x2="340" y2="502" stroke="#0A0A0A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <!-- external -->
+    <rect x="70" y="504" width="540" height="38" rx="19" fill="none" stroke="#78716C" stroke-width="1.2" stroke-dasharray="4 5"/>
+    <text x="340" y="528" text-anchor="middle" class="sub">external services &#183; APIs, DBs, daemons, the web</text>
+  </g>
+
+  <!-- knowledge, feeds the stack -->
+  <rect x="690" y="210" width="440" height="176" rx="12" fill="#FFFFFF" stroke="#E7E5E4" stroke-width="1.5"/>
+  <text x="716" y="246" class="kick">KNOWLEDGE</text>
+  <text x="716" y="274" class="role">editable rules and constants</text>
+  <text x="716" y="302" class="sub">change behavior by editing a note, not the code</text>
+  <text x="716" y="326" class="sub">seeded with a default, edited by a human</text>
+  <text x="688" y="352" text-anchor="end" class="sub" fill="#A8A29E">feeds the tools and modules</text>
+  <line x1="686" y1="366" x2="614" y2="366" stroke="#0A0A0A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- activity bus -->
+  <rect x="70" y="580" width="1060" height="72" rx="14" fill="#0A0A0A"/>
+  <text x="98" y="614" class="kick" fill="#FAFAF9">ACTIVITY BUS</text>
+  <text x="98" y="638" font-size="15.5" fill="#D6D3D1">every meaningful action is logged here, and modules can subscribe to it</text>
+  <line x1="990" y1="484" x2="990" y2="576" stroke="#78716C" stroke-width="1.2" stroke-dasharray="2 5" opacity="0.7"/>
+  <text x="1004" y="536" class="sub" fill="#A8A29E" transform="rotate(90 1004 536)" text-anchor="middle">logs</text>
+</svg>

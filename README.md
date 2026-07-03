@@ -3,11 +3,7 @@
 An installable agent **skill**: a methodology + copy-paste templates for building and
 extending a system in five layers.
 
-```
-gateway  ->  tool  ->  workflow  ->  module  ->  knowledge
-(one         (one      (ordered     (a product    (editable
- service)     job)      tools)       area + UI)     rules)
-```
+![Architecture: module -> workflow -> tool -> gateway -> external services, with knowledge feeding the stack and an activity bus underneath](architecture.svg)
 
 Each layer reaches only the layer(s) below it. Everything is JSON in / JSON out. Every
 meaningful mutation logs to an activity bus. Behavior lives in editable knowledge, not code.
