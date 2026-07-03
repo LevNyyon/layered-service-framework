@@ -1,9 +1,9 @@
 ---
-description: Build a new workflow (ordered existing tools, no logic) the layered-service-framework way
+description: Build a new workflow (ordered existing tools, no logic) the nyyon-lite way
 argument-hint: <name>
 ---
 
-Build a **workflow** named `$ARGUMENTS`, following the layered-service-framework skill.
+Build a **workflow** named `$ARGUMENTS`, following the nyyon-lite skill.
 
 A workflow is an ordered list of EXISTING tools. A generic runner threads a shared context
 through the steps. It holds **no** logic: no branching, no math, no side effects of its own.

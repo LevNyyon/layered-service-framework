@@ -1,9 +1,9 @@
 ---
-description: Build a new tool (one job, in the shared pool) the layered-service-framework way
+description: Build a new tool (one job, in the shared pool) the nyyon-lite way
 argument-hint: <name> e.g. score_icp_fit
 ---
 
-Build a **tool** named `$ARGUMENTS`, following the layered-service-framework skill.
+Build a **tool** named `$ARGUMENTS`, following the nyyon-lite skill.
 
 A tool does ONE job. It reaches external services ONLY through gateways, lives in the single
 shared pool every module can use, and never calls another tool.

@@ -1,9 +1,9 @@
 ---
-description: Add a knowledge note (editable rules/constants, not code) the layered-service-framework way
+description: Add a knowledge note (editable rules/constants, not code) the nyyon-lite way
 argument-hint: <slug>
 ---
 
-Add a **knowledge note** `$ARGUMENTS`, following the layered-service-framework skill.
+Add a **knowledge note** `$ARGUMENTS`, following the nyyon-lite skill.
 
 Knowledge holds constants and business rules a human can edit in plain words, so behavior
 changes without touching code or deploying.

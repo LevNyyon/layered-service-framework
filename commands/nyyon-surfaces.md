@@ -1,10 +1,10 @@
 ---
-description: Add a surface (a page/view) to an existing module the layered-service-framework way
+description: Add a surface (a page/view) to an existing module the nyyon-lite way
 argument-hint: <module-slug> <surface-name>
 ---
 
 Add a **surface** (a page/view) to the existing module `$ARGUMENTS`, following the
-layered-service-framework skill.
+nyyon-lite skill.
 
 A surface is one screen of a module's visualization. Use this when a module already exists
 and needs another view (a dashboard, a detail screen, a second tab), not a new product area.

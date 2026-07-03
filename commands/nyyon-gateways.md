@@ -1,9 +1,9 @@
 ---
-description: Build a new gateway (the boundary to one external service) the layered-service-framework way
+description: Build a new gateway (the boundary to one external service) the nyyon-lite way
 argument-hint: <slug> e.g. serpapi, twilio, pdl
 ---
 
-Build a **gateway** for `$ARGUMENTS`, following the layered-service-framework skill.
+Build a **gateway** for `$ARGUMENTS`, following the nyyon-lite skill.
 
 A gateway is the boundary to ONE external service (an API, a DB table, a daemon, a web
 fetch). It is the only layer allowed to touch the outside world. It does **no reasoning**.

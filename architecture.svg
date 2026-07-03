@@ -17,7 +17,7 @@
   <rect width="1200" height="700" fill="#FAFAF9"/>
   <rect width="1200" height="700" fill="url(#grid)"/>
 
-  <text x="70" y="58" font-size="30" font-weight="700" fill="#0A0A0A" letter-spacing="-0.5">Layered service framework</text>
+  <text x="70" y="58" font-size="30" font-weight="700" fill="#0A0A0A" letter-spacing="-0.5">Nyyon Lite</text>
   <text x="70" y="85" class="sub" font-size="14.5">gateway &#8594; tool &#8594; workflow &#8594; module &#8594; knowledge &#160;&#183;&#160; each layer reaches only the one below</text>
 
   <!-- main stack -->

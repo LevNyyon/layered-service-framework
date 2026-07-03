@@ -1,9 +1,9 @@
 ---
-description: Build a new module (a product area + its screen) the layered-service-framework way
+description: Build a new module (a product area + its screen) the nyyon-lite way
 argument-hint: <slug>
 ---
 
-Build a **module** named `$ARGUMENTS`, following the layered-service-framework skill.
+Build a **module** named `$ARGUMENTS`, following the nyyon-lite skill.
 
 A module is one product area. It owns its API routes and ships exactly one **visualization**
 (a page). It uses the shared tools and gateways, never private ones, never a raw fetch.

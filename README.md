@@ -1,4 +1,6 @@
-# layered-service-framework
+# Nyyon Lite
+
+![Nyyon Lite: a light, layered way to build software with AI](cover.svg)
 
 An installable agent **skill**: a methodology + copy-paste templates for building and
 extending a system in five layers.
@@ -53,12 +55,12 @@ Clone it into the agent's skills folder, then link the commands so `/nyyon-tools
 `/nyyon-gateways`, etc. resolve:
 
 ```bash
-git clone https://github.com/LevNyyon/layered-service-framework.git \
-  ~/.claude/skills/layered-service-framework
+git clone https://github.com/LevNyyon/nyyon-lite.git \
+  ~/.claude/skills/nyyon-lite
 
 # make the slash commands available (symlink, so they update when you pull)
 mkdir -p ~/.claude/commands
-ln -sf ~/.claude/skills/layered-service-framework/commands/*.md ~/.claude/commands/
+ln -sf ~/.claude/skills/nyyon-lite/commands/*.md ~/.claude/commands/
 ```
 
 Or per-project: clone into `.claude/skills/` and link into `.claude/commands/`. The skill

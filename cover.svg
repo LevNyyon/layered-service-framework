@@ -1,0 +1,16 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F4F4F2"/>
+  <rect x="792" width="408" height="630" fill="#6C5CE7"/>
+
+  <rect x="64" y="102" width="13" height="13" fill="#6C5CE7"/>
+  <text x="88" y="114" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="700" font-size="16" letter-spacing="3" fill="#6E6E6A">OPEN SOURCE &#183; MIT</text>
+
+  <text x="62" y="330" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="66" letter-spacing="-1.5" fill="#111110">Nyyon <tspan fill="#6C5CE7">Lite</tspan></text>
+
+  <text x="64" y="540" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="400" font-size="22" fill="#44443F">A light, layered way to build software with AI,</text>
+  <text x="64" y="572" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="400" font-size="22" fill="#44443F">one small, legible piece at a time.</text>
+
+  <g transform="translate(952 150) scale(1.371)"><path d="M33,0 L64,0 L64,66 L33,50 L33,0 Z M0,4 L31,20 L31,70 L0,70 L0,4 Z" fill="#F4F4F2"/></g>
+  <text x="996" y="330" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="42" letter-spacing="-0.5" fill="#F4F4F2">nyyon</text>
+  <text x="996" y="576" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="500" font-size="17" letter-spacing="3" fill="#F4F4F2">NYYON.COM</text>
+</svg>

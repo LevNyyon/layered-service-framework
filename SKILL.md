@@ -1,5 +1,5 @@
 ---
-name: layered-service-framework
+name: nyyon-lite
 description: >
   Methodology + templates for building and extending a system in five layers: gateway
   (boundary to one external service, no reasoning) -> tool (one job, reaches services only
@@ -13,9 +13,9 @@ description: >
   rules live in knowledge, everything logs to an activity bus, files are written whole.
 ---
 
-# Layered service framework
+# Nyyon Lite
 
-A discipline for systems that must stay extensible, especially ones an agent extends. JSON
+A light, layered discipline for systems that must stay extensible, especially ones an agent extends. JSON
 in, JSON out at every boundary. Every layer reaches only the layer(s) below it. Every
 meaningful mutation logs to an activity bus. Behavior is explainable because the rules live
 in editable knowledge, not buried in code.
