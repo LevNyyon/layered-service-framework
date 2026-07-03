@@ -1,0 +1,30 @@
+{
+  "name": "nyyon-lite",
+  "description": "The nyyon-lite plugin: a light, layered discipline (gateway -> tool -> workflow -> module -> knowledge) for building systems with AI, plus one slash command per layer.",
+  "owner": {
+    "name": "nyyon",
+    "email": "lev@nyyon.com"
+  },
+  "plugins": [
+    {
+      "name": "nyyon-lite",
+      "source": ".",
+      "description": "Methodology plus copy-paste templates for building and extending a system in five layers: gateway -> tool -> workflow -> module -> knowledge. Ships the nyyon-lite skill and the /nyyon-* slash commands.",
+      "author": {
+        "name": "nyyon",
+        "email": "lev@nyyon.com"
+      },
+      "homepage": "https://nyyon.com",
+      "repository": "https://github.com/LevNyyon/nyyon-lite",
+      "license": "MIT",
+      "category": "development",
+      "keywords": [
+        "architecture",
+        "methodology",
+        "agent-skill",
+        "layered",
+        "nyyon"
+      ]
+    }
+  ]
+}

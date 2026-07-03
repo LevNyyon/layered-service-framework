@@ -24,17 +24,17 @@ in editable knowledge, not buried in code.
 
 The one rule: **each layer may reach only the layer(s) below it. Never sideways, never up.**
 
-1. **Gateway** — the boundary to ONE external service (an API, a DB table, a daemon, a web
+1. **Gateway**: the boundary to ONE external service (an API, a DB table, a daemon, a web
    fetch). Translates in and out. **Does no reasoning.** Only the dedicated `llm` gateway
    may call an LLM.
-2. **Tool** — does ONE job. Reaches external services ONLY through gateways. Lives in a
+2. **Tool**: does ONE job. Reaches external services ONLY through gateways. Lives in a
    single shared pool every module and workflow can use. May reason (via `llm`). Never
    calls another tool.
-3. **Workflow** — an ordered list of EXISTING tools. No business rules, no branching. A
+3. **Workflow**: an ordered list of EXISTING tools. No business rules, no branching. A
    generic runner threads a shared context through the steps.
-4. **Module** — a product area. Owns its routes and a **visualization** (a page). Uses the
+4. **Module**: a product area. Owns its routes and a **visualization** (a page). Uses the
    shared tools and gateways; never defines private ones, never fetches a service directly.
-5. **Knowledge** — editable notes holding constants and business rules. Code seeds a
+5. **Knowledge**: editable notes holding constants and business rules. Code seeds a
    default; humans edit it. Changing behavior = editing a note, not code.
 
 Under everything: an **Activity** event bus. `logEvent(env, kind, actor, payload)` on every
@@ -60,6 +60,14 @@ One slash command drives each layer (they live in `commands/`): `/nyyon-gateways
 an existing module. Each command runs
 the recipe below for that layer, registers the result, and runs the validator. Building a
 capability by hand is the same recipe without the command.
+
+Above the per-layer commands, `/nyyon <what you want>` plans a whole capability across all five
+layers and drives them in order. Utilities read and check, they do not mutate: `/nyyon-map` draws
+the current system, `/nyyon-doctor` health-checks it, `/nyyon-review` checks a diff against the
+guardrails, and `/nyyon-test <tool|gateway>` behaviour-checks one component against the outcomes
+you describe. `/nyyon-unbuild <layer> <name>` cleanly removes a component and every registration
+of it. Any build command also accepts `--dry-run`: print the file plan (paths, which registries
+change, which migration) and stop, so you see the blast radius before a whole-file write.
 
 ### Build a GATEWAY  (`templates/gateway.js`)
 1. Copy the template. Set `slug`, `service`, `modes`, `configFields`.
