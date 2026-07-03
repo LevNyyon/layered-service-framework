@@ -55,7 +55,8 @@ First decide the layer:
 Then copy the matching file from `templates/` and follow its recipe.
 
 One slash command drives each layer (they live in `commands/`): `/gateway <slug>`,
-`/tool <name>`, `/workflow <name>`, `/module <slug>`, `/knowledge <slug>`. Each command runs
+`/tool <name>`, `/workflow <name>`, `/module <slug>`, `/knowledge <slug>`, plus
+`/surface <module> <name>` to add another page/view to an existing module. Each command runs
 the recipe below for that layer, registers the result, and runs the validator. Building a
 capability by hand is the same recipe without the command.
 

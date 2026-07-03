@@ -43,7 +43,8 @@ into a mess.
 - **`templates/`** — a copy-paste skeleton per component: `gateway.js`, `tool.js`,
   `workflow.js`, `module.index.js`, `module.page.jsx`, `migration.sql`.
 - **`commands/`** — one slash command per layer: `/gateway`, `/tool`, `/workflow`,
-  `/module`, `/knowledge`. Each runs that layer's recipe, registers the result, and validates.
+  `/module`, `/knowledge`, plus `/surface` to add a page/view to an existing module. Each
+  runs that layer's recipe, registers the result, and validates.
 
 ## Install (on any Claude Code / agent)
 
