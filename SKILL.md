@@ -54,9 +54,10 @@ First decide the layer:
 
 Then copy the matching file from `templates/` and follow its recipe.
 
-One slash command drives each layer (they live in `commands/`): `/gateway <slug>`,
-`/tool <name>`, `/workflow <name>`, `/module <slug>`, `/knowledge <slug>`, plus
-`/surface <module> <name>` to add another page/view to an existing module. Each command runs
+One slash command drives each layer (they live in `commands/`): `/nyyon-gateways <slug>`,
+`/nyyon-tools <name>`, `/nyyon-workflows <name>`, `/nyyon-modules <slug>`,
+`/nyyon-knowledge <slug>`, plus `/nyyon-surfaces <module> <name>` to add another page/view to
+an existing module. Each command runs
 the recipe below for that layer, registers the result, and runs the validator. Building a
 capability by hand is the same recipe without the command.
 

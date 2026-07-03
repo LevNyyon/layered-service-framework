@@ -11,7 +11,7 @@ through the steps. It holds **no** logic: no branching, no math, no side effects
 Steps:
 1. Read the skill's `templates/workflow.js`.
 2. List the tools it chains, in order, by name. Every one must already exist in the `TOOLS`
-   pool. If a step needs a tool that does not exist yet, build it first with `/tool`.
+   pool. If a step needs a tool that does not exist yet, build it first with `/nyyon-tools`.
 3. Give it `{ name, goal, steps: [toolNames] }`.
 4. Register it: add the entry to the `WORKFLOWS` registry in `workflows/index.js`.
 5. Run `node scripts/validate.mjs`.

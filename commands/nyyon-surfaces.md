@@ -21,5 +21,5 @@ Steps:
 5. Run `node scripts/validate.mjs`.
 
 Guardrail: a surface is a view, not a product area. If it needs its own storage or a
-distinct domain of routes, build a `/module` instead. Every surface reuses the shared tools
+distinct domain of routes, build a `/nyyon-modules` instead. Every surface reuses the shared tools
 and gateways; none fetches a service directly.
